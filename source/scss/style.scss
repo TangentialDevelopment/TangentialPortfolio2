@@ -1,0 +1,176 @@
+@import "_variables";
+
+html {
+  background-color: $color1;
+}
+
+nav {
+  margin-bottom: 1em;
+}
+
+body {
+  background-color: $color5;
+  margin: $body-margin;
+  width: $body-width;
+  padding: $body-padding;
+  text-align: $body-textalign;
+}
+
+p.disclaimer {
+  font-size: $disclaim;
+}
+
+h2.title {
+  font-size: $h1-title-font;
+  text-align: $h1-title-text-align;
+}
+
+h3.subtitle {
+  font-size: $disclaim;
+  text-align: $h2-text-align;
+}
+
+.text {
+  color: $color5;
+  font-family: $fontfamily-text;
+  font-size: $fontsize-text;
+  padding: $padding-text;
+  margin: $margin-text;
+  -webkit-text-stroke: $text-highlight;
+}
+
+p {
+  font-size: $p-font-size;
+  text-align: $p-text-align;
+}
+
+.banner {
+  max-width: $banner-width;
+  display: $banner-display;
+  margin-left: $banner-margin;
+  margin-right: $banner-magin;
+}
+
+ul {
+  list-style-type: $ul-list-style;
+  padding: $ul-padding;
+}
+
+.ul.navigation {
+  list-style-type: $ul-list-style;
+  margin: 0 auto;
+  text-align: $alignmentul-nav;
+  border-bottom: $borderbotul-nav;
+  font-family: $font-nav;
+  background-color: $color5;
+}
+
+li.a {
+  display: $display-lia;
+}
+
+li.second {
+  text-align: $textalign-lisecond;
+  list-style: $liststyle-lisecond;
+  font-size: $fontsize-lisecond;
+  font-weight: $fontweight-lisecond;
+}
+
+a.hero {
+  display: $hero-display;
+  margin-left: $hero-margin;
+  margin-right: $hero-margin;
+}
+
+a:link {
+  color: $color2;
+  padding: $padding-a;
+  text-align: $textalign-a;
+  text-decoration: $textdecoration-a;
+  display: $display-a;
+  font-weight: $fontweight-alink;
+}
+
+a:visited {
+  padding: $padding-a;
+  text-align: $textalign-a;
+  text-decoration: $textdecoration-a;
+  display: $display-a;
+  font-weight: $fontweight-avisitied;
+}
+
+a:hover,
+a:active {
+  background-color: $color5;
+  padding: $padding-a;
+  text-align: $textalign-a;
+  text-decoration: $textdecoration-a;
+  display: $display-a;
+  border-radius: $borderradius-aha;
+}
+
+a.current:link,
+a.current:visited {
+  color: white;
+  background-color: $color2;
+}
+
+.my-div1 {
+  border-radius: $borderradius-mydiv;
+  background-color: $color2;
+  background-size: $backgroundsize-mydiv1;
+  padding: $mydiv-padding;
+  margin: $mydiv-margin;
+  max-width: $mydiv-maxwidth;
+}
+
+.my-div2 {
+  border-radius: $borderradius-mydiv;
+  background-color: $color3;
+  background-size: $backgroundsize-mydiv2;
+  padding: $mydiv-padding;
+  margin: $mydiv-margin;
+  max-width: $mydiv-maxwidth;
+}
+
+.my-div3 {
+  border-radius: $borderradius-mydiv;
+  background-color: $color4;
+  background-size: $backgroundsize-mydiv2;
+  padding: $mydiv-padding;
+  margin: $mydiv-margin;
+  max-width: $mydiv-maxwidth;
+}
+
+.inline-block-center {
+  text-align: $block-textalign;
+}
+
+.inline-block-center .fill-div {
+  display: $block-display;
+  text-align: $block-textalign;
+}
+
+ul.block-center {
+  display: $block-center-display;
+  justify-content: $block-center-justify;
+}
+
+.back-to-top {
+  display: inline;
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff9000;
+}
+
+.back-to-top i {
+  font-size: 60px;
+}
