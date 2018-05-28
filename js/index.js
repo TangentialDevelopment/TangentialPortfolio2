@@ -1,12 +1,16 @@
-// function emailpopout () {
-//   var popup = document.getElementById('email')
-//   popup.classList.toggle('show')
-// }
-// function mailingpopout () {
-//   var popup = document.getElementById('mailing')
-//   popup.classList.toggle('show')
-// }
+//highligher jQuery
+var traits = document.querySelectorAll('.selector')
 
+for (var i = 0; i < traits.length; i++) {
+  var parts = $(traits[i]).attr('class').split(' ')
+  var trait = '.' + parts[1]
+  $(trait).on('click', function () {
+    var name = '.' + this.className.split(' ')[1]
+    $(name).toggleClass('highlight')
+  })
+}
+
+//scroll to the top (needs to be fixed)
 jQuery(document).ready(function() {
   var offset = 250
   var duration = 300
