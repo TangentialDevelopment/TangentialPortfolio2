@@ -1,27 +1,42 @@
 @import "_variables";
 
 html {
-  background-color: $color1;
+  background-image: url("../../images/glacierModified.png");
+  position: relative;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 nav {
   margin-bottom: 1em;
 }
 
+nav .container {
+  background: none;
+  padding: 0;
+}
+
 .highlight {
   text-shadow: 0px 4px 3px rgba(0,0,0,.4),
 				 0px 8px 13px rgba(0,0,0,.1),
 				 0px 18px 23px rgba(0,0,0,.1);
-  color: $color6;
+  color: $color7;
   //border: 2px solid rgba(255,147,41,.1);
 }
 
 body {
-  background-color: $color5;
+  background: transparent;
   margin: $body-margin;
   width: $body-width;
   padding: $body-padding;
   text-align: $body-textalign;
+}
+
+.container {
+  background: rgba(218, 227, 229, 0.7);
+  padding: 15px 15px;
 }
 
 p.disclaimer {
@@ -69,6 +84,10 @@ ul {
   padding: $ul-padding;
 }
 
+ol {
+  list-style-type: upper-roman;
+}
+
 .ul.navigation {
   list-style-type: $ul-list-style;
   margin: 0 auto;
@@ -94,6 +113,10 @@ a.hero {
   margin-right: $hero-margin;
 }
 
+.nohover {
+  pointer-events: none;
+}
+
 a:link {
   color: $color2;
   padding: $padding-a;
@@ -103,7 +126,7 @@ a:link {
   font-weight: $fontweight-alink;
 }
 
-a:visited {
+button:visited {
   padding: $padding-a;
   text-align: $textalign-a;
   text-decoration: $textdecoration-a;
@@ -111,8 +134,8 @@ a:visited {
   font-weight: $fontweight-avisitied;
 }
 
-a:hover,
-a:active {
+button:hover,
+button:active {
   background-color: $color5;
   padding: $padding-a;
   text-align: $textalign-a;
@@ -121,8 +144,8 @@ a:active {
   border-radius: $borderradius-aha;
 }
 
-a.current:link,
-a.current:visited {
+button.current:link,
+button.current:visited {
   color: white;
   background-color: $color2;
 }
