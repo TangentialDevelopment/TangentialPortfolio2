@@ -1,12 +1,7 @@
 @import "_variables";
 
-html {
-  background-image: url("../../images/glacierModified.png");
-  position: relative;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+body, html {
+    height: 100%;
 }
 
 nav {
@@ -26,7 +21,22 @@ nav .container {
   //border: 2px solid rgba(255,147,41,.1);
 }
 
-body {
+.page {
+  position: relative;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+}
+
+.main {
+  background-image: url("../../images/glacierModified.png");
+}
+
+.hider {
   background: transparent;
   margin: $body-margin;
   width: $body-width;
@@ -34,9 +44,23 @@ body {
   text-align: $body-textalign;
 }
 
+.mainPage {
+  color: $color4;
+  text-align: left;
+}
+
+.tabbed {
+  padding-left: 4.00em;
+}
+
+.javaObjectTitle {
+  color: $color2;
+}
+
 .container {
-  background: rgba(218, 227, 229, 0.7);
+  background: rgba(4, 8, 15, 0.7);
   padding: 15px 15px;
+  text-align: center;
 }
 
 p.disclaimer {
@@ -155,7 +179,7 @@ button.current:visited {
   padding: $mydiv-padding;
   margin: $mydiv-margin;
   max-width: $mydiv-maxwidth;
-  text-align: center;
+  text-align: left;
 }
 
 .first {

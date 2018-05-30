@@ -1,12 +1,15 @@
 //highligher jQuery
 var traits = document.querySelectorAll('.selector')
+var active = ''
 
 for (var i = 0; i < traits.length; i++) {
   var parts = $(traits[i]).attr('class').split(' ')
   var trait = '.' + parts[1]
   $(trait).on('click', function () {
+    $(active).toggleClass('highlight')
     var name = '.' + this.className.split(' ')[1]
-    $(name).toggleClass('highlight')
+    active = name
+    $(active).toggleClass('highlight')
   })
 }
 
