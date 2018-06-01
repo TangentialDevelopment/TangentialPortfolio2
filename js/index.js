@@ -1,17 +1,27 @@
-//highligher jQuery
-var traits = document.querySelectorAll('.selector')
-var active = ''
+function init() {
+  //highligher jQuery
+  var traits = document.querySelectorAll('.selector')
 
-for (var i = 0; i < traits.length; i++) {
-  var parts = $(traits[i]).attr('class').split(' ')
-  var trait = '.' + parts[1]
-  $(trait).on('click', function () {
-    $(active).toggleClass('highlight')
-    var name = '.' + this.className.split(' ')[1]
-    active = name
-    $(active).toggleClass('highlight')
-  })
+  if (traits) {
+    var active = ''
+
+    for (var i=0; i<traits.length; i++) {
+      var parts = $(traits[i]).attr('class').split(' ')
+      var trait = '.' + parts[1]
+      $(trait).on('click', function () {
+        $(active).toggleClass('highlight')
+        var name = '.' + this.className.split(' ')[1]
+        active = name
+        $(active).toggleClass('highlight')
+      })
+    }
+  }
+  //different backgroungs
+  $('.textBlock:even').addClass('wood1')
+  $('.textBlock:odd').addClass('wood2')
 }
+
+init()
 
 //scroll to the top (needs to be fixed)
 jQuery(document).ready(function() {

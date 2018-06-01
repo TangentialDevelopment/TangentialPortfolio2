@@ -2,6 +2,8 @@
 
 body, html {
     height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 nav {
@@ -17,23 +19,28 @@ nav .container {
   text-shadow: 0px 4px 3px rgba(0,0,0,.4),
 				 0px 8px 13px rgba(0,0,0,.1),
 				 0px 18px 23px rgba(0,0,0,.1);
-  color: $color7;
+  color: $color6;
   //border: 2px solid rgba(255,147,41,.1);
 }
 
-.page {
-  position: relative;
-  background-position: right;
-  background-repeat: no-repeat;
+.main {
+  background: url("../../images/glacierModified.png");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.main {
-  background-image: url("../../images/glacierModified.png");
+.prof {
+  background: url("../../images/marketModified.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hider {
@@ -47,6 +54,10 @@ nav .container {
 .mainPage {
   color: $color4;
   text-align: left;
+}
+
+.specialPage {
+  color: $color4;
 }
 
 .tabbed {
@@ -105,7 +116,7 @@ p.copyright{
 
 ul {
   list-style-type: $ul-list-style;
-  padding: $ul-padding;
+  margin: 0;
 }
 
 ol {
@@ -135,6 +146,14 @@ a.hero {
   display: $hero-display;
   margin-left: $hero-margin;
   margin-right: $hero-margin;
+}
+
+div a {
+  color: #FFFAFA;
+}
+
+div a:visited {
+  color: #FFFAFA;
 }
 
 .nohover {
@@ -177,25 +196,36 @@ button.current:visited {
 .textBlock {
   border-radius: $borderradius-mydiv;
   padding: $mydiv-padding;
-  margin: $mydiv-margin;
+  margin: 6em auto;
   max-width: $mydiv-maxwidth;
   text-align: left;
+
+  color: #FFFAFA;
+  text-shadow:0 1px 0 $color2;
 }
 
-.first {
-
-  background-color: $color2;
-  background-size: $backgroundsize-mydiv1;
+.wood1 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+      ), url("../../images/woodModified.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.second {
-  background-color: $color3;
-  background-size: $backgroundsize-mydiv2;
-}
-
-.third {
-  background-color: $color4;
-  background-size: $backgroundsize-mydiv2;
+.wood2 {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ), url("../../images/woodModified2.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .inline-block-center {
