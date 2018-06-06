@@ -23,31 +23,31 @@ function init() {
 }
 
 //horizontal mCustomScrollbar
-(function($){
-  $(window).on("load",function(){
-    $(".browse").mCustomScrollbar({
-      axis:"x",
-      theme:"dark-3",
-      advanced:{
-        autoExpandHorizontalScroll:true
-      },
-      callbacks:{
-        onCreate:function(){
-          $(this).find(".item").css("width",$(this).width());
-        },
-        onBeforeUpdate:function(){
-          $(this).find(".item").css("width",$(this).width());
-        }
-      }
-    });
-  });
-})(jQuery);
-
-(function($){
-    $(window).on("load",function(){
-        $(".browse").mCustomScrollbar();
-    });
-})(jQuery);
+// (function($){
+//   $(window).on("load",function(){
+//     $(".browse").mCustomScrollbar({
+//       axis:"x",
+//       theme:"dark-3",
+//       advanced:{
+//         autoExpandHorizontalScroll:true
+//       },
+//       callbacks:{
+//         onCreate:function(){
+//           $(this).find(".item").css("width",$(this).width());
+//         },
+//         onBeforeUpdate:function(){
+//           $(this).find(".item").css("width",$(this).width());
+//         }
+//       }
+//     });
+//   });
+// })(jQuery);
+//
+// (function($){
+//     $(window).on("load",function(){
+//         $(".browse").mCustomScrollbar();
+//     });
+// })(jQuery);
 
 init()
 

@@ -204,18 +204,18 @@ button.current:visited {
 
   color: #FFFAFA;
   text-shadow:0 1px 0 $color2;
-
-  display: block;
-  float: left
+  // horizontal scrolling
+  // display: block;
+  // float: left
 }
 
 
 //http://manos.malihu.gr/code-example/horizontal-custom-scrollbar-tutorial/
-.browse {
-  overflow-x: auto;
-  margin: 0;
-  max-height: 50em;
-}
+// .browse {
+//   overflow-x: auto;
+//   margin: 0;
+//   max-height: 50em;
+// }
 
 .wood1 {
   background: linear-gradient(
