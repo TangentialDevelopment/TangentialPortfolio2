@@ -1,6 +1,21 @@
+function clear(all) {
+  $('.selector').removeClass('highlight')
+  for (var i=0; i<all.length; i++) {
+    $(all[i]).removeClass('highlight')
+  }
+}
+
+function highlighter(highlight) {
+  for (var i=0; i<highlight.length; i++) {
+    $(highlight[i]).addClass('highlight')
+  }
+}
+
 function init() {
   //highligher jQuery
   var traits = document.querySelectorAll('.selector')
+  var skills = []
+  var highlighted = []
 
   if (traits) {
     var active = ''
@@ -8,11 +23,20 @@ function init() {
     for (var i=0; i<traits.length; i++) {
       var parts = $(traits[i]).attr('class').split(' ')
       var trait = '.' + parts[1]
+      skills.push(trait)
       $(trait).on('click', function () {
-        $(active).toggleClass('highlight')
+        clear(skills)
         var name = '.' + this.className.split(' ')[1]
         active = name
-        $(active).toggleClass('highlight')
+        if (highlighted.includes(name)) {
+          var index = highlighted.indexOf(name)
+          highlighted.splice(index, 1)
+          clear(skills)
+        } else {
+          // $(active).toggleClass('highlight')
+          highlighted.push(active)
+        }
+        highlighter(highlighted)
       })
     }
   }
