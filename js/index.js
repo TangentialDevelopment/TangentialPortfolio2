@@ -11,6 +11,11 @@ function highlighter(highlight) {
   }
 }
 
+function makeClass(string) {
+  var newClass = '.' + string
+  return newClass
+}
+
 function init() {
   //highligher jQuery
   var traits = document.querySelectorAll('.selector')
@@ -22,11 +27,11 @@ function init() {
 
     for (var i=0; i<traits.length; i++) {
       var parts = $(traits[i]).attr('class').split(' ')
-      var trait = '.' + parts[1]
+      var trait = makeClass(parts[1])
       skills.push(trait)
       $(trait).on('click', function () {
         clear(skills)
-        var name = '.' + this.className.split(' ')[1]
+        var name = makeClass(this.className.split(' ')[1])
         active = name
         if (highlighted.includes(name)) {
           var index = highlighted.indexOf(name)
