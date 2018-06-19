@@ -1,5 +1,17 @@
 @import "_variables";
 
+//snow stuff
+body {
+  margin:0;
+  height:100%;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 body, html {
     height: 100%;
     width: 100%;
