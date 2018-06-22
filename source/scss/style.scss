@@ -134,10 +134,11 @@ p.copyright{
 }
 
 .banner {
-  max-width: $banner-width;
   display: $banner-display;
   margin-left: $banner-margin;
   margin-right: $banner-margin;
+  height: 25em;
+  width: 70em;
 }
 
 ul {
