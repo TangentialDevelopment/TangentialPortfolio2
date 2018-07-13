@@ -5,5 +5,6 @@ portfolio site
 06-01 2.2 release: major overhaul of styling
 06-21 2.3 release: added styling, added snow effects
 06-22 2.4 release: updated main banner
+07-12 3.0 release: main update, considered public at this point
 
 current working goals: make more graphics for the site
