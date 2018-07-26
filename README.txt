@@ -1,4 +1,6 @@
 portfolio site
+tools: Sass, bootstrap, malihu
+descriptions: test of most of the technologies I know compiled into one site.
 
 05-18 2.0 release: new updates include bootstrap
 05-27 2.1 release: added highlight feature update
