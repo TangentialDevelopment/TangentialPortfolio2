@@ -1,4 +1,4 @@
-### portfolio site
+### Portfolio site
 ## Tools: Sass, bootstrap, malihu
 descriptions: test of most of the technologies I know compiled into one site.
 
