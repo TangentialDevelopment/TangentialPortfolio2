@@ -8,5 +8,6 @@ descriptions: test of most of the technologies I know compiled into one site.
 - 06-21 2.3 release: added styling, added snow effects
 - 06-22 2.4 release: updated main banner
 - 07-12 3.0 release: main update, considered public at this point
+- 07-30 3.1 release: adding portfolio section
 
-current working goals: make more graphics for the site
+current working goals: redesign portfolio to convey information better
