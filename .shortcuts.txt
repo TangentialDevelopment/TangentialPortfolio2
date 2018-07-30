@@ -1,2 +1,4 @@
 node-sass source/scss/style.scss --output=compiled/css --output-style=compressed --source-map=true
 live-server
+
+npm run sass

@@ -56,6 +56,27 @@ nav .container {
   background-attachment: fixed;
 }
 
+.port {
+  background: url("../../images/marketModified.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.scrollBox {
+  width: 90%;
+  height: 35em;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.scrollBox::-webkit-scrollbar { 
+    display: none;
+}
+
 .media {
   background: url("../../images/bridgeModified.png");
   background-size: cover;
@@ -179,7 +200,7 @@ div a {
 }
 
 div a:visited {
-  color: #FFFAFA;
+  color: #8e8b8b;
 }
 
 .nohover {
@@ -187,7 +208,7 @@ div a:visited {
 }
 
 a:link {
-  color: $color2;
+  color: #FFFAFA;
   padding: $padding-a;
   text-align: $textalign-a;
   text-decoration: $textdecoration-a;
