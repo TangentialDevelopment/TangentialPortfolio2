@@ -7,8 +7,9 @@ descriptions: test of most of the technologies I know compiled into one site.
 - 06-01 2.2 release: major overhaul of styling
 - 06-21 2.3 release: added styling, added snow effects
 - 06-22 2.4 release: updated main banner
-- 07-12 3.0 release: main update, considered public at this point
-- 07-30 3.1 release: adding portfolio section
-- 07-30 3.2 release: portfolio template completed
+- 07-12 3.0 release: main update, considered public
 
-current working goals: update portfolio
+- 07-30 3.1 release: adding portfolio section
+- 07-31 3.2 release: portfolio template completed
+
+current working goals: fill in details on portfolio; finish styling
