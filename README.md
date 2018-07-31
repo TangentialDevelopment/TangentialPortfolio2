@@ -11,4 +11,4 @@ descriptions: test of most of the technologies I know compiled into one site.
 - 07-30 3.1 release: adding portfolio section
 - 07-30 3.2 release: portfolio template completed
 
-current working goals: redesign portfolio to convey information better
+current working goals: update portfolio
