@@ -11,5 +11,6 @@ descriptions: test of most of the technologies I know compiled into one site.
 - 07-30 3.1 release: adding portfolio section
 - 07-31 3.2 release: portfolio template completed
 - 08-10 3.3 release: added webslides
+- 08-20 3.4 release: adding styling for a fast loading page
 
 current working goals: update portfolio slides to user flow

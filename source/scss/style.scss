@@ -1,11 +1,41 @@
 @import "_variables";
-
-body {
-  margin:0;
-  height:100%;
+//fast load page
+.mainAlt {
+  background: white;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-canvas {
+#canvasAlt {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.JumbotronAlt {
+  display: none;
+}
+
+.mainPageAlt {
+    background: yellow;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.footerAlt {
+  background: pink;
+}
+
+// slow load page
+#canvas {
     position: absolute;
     top: 0;
     left: 0;
@@ -126,7 +156,6 @@ nav .container {
 }
 
 h2.title {
-  // font-size: $h1-title-font;
   text-align: $h1-title-text-align;
 }
 
@@ -249,18 +278,7 @@ button.current:visited {
 
   color: #FFFAFA;
   text-shadow:0 1px 0 $color2;
-  // horizontal scrolling
-  // display: block;
-  // float: left
 }
-
-
-//http://manos.malihu.gr/code-example/horizontal-custom-scrollbar-tutorial/
-// .browse {
-//   overflow-x: auto;
-//   margin: 0;
-//   max-height: 50em;
-// }
 
 .wood1 {
   background: linear-gradient(
