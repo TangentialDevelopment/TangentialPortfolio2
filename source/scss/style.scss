@@ -1,38 +1,27 @@
 @import "_variables";
+
 //fast load page
-.mainAlt {
-  background: white;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-#canvasAlt {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.JumbotronAlt {
-  display: none;
-}
-
-.mainPageAlt {
-    background: yellow;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.footerAlt {
-  background: pink;
-}
+// .Alt {
+//   display: none;
+// }
+//
+// .mainAlt {
+//   background: white;
+//   background-size: cover;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+// }
+//
+// .spacer {
+//   margin-top: 10px;
+// }
+//
+// .tabbed {
+//   padding-left: 4.00em;
+// }
 
 // slow load page
 #canvas {
@@ -159,7 +148,7 @@ h2.title {
   text-align: $h1-title-text-align;
 }
 
-h3.subtitle {
+h2.subtitle {
   font-size: $disclaim;
   text-align: $h2-text-align;
 }
